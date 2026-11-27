@@ -31,6 +31,9 @@ embedded through `.incbin`). `cmake --install build --prefix <dir>` installs bot
     find_package( propan2ol REQUIRED )
     target_link_libraries( app PRIVATE propan2ol::propan2ol )   # or propan2ol::propan2ol_shared
 
+Or as a subproject (a git submodule): `add_subdirectory( propan2ol )` gives the same `propan2ol::` targets, with the tests and install
+rules off unless `PROPAN2OL_TESTS` / `PROPAN2OL_INSTALL` are set; its objects build with `-fexceptions` whatever the parent's flags.
+
 The code style is in `.clang-format` (volta-engine's: tabs, `f( x )`, attached braces).
 
 ## Layout
