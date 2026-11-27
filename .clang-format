@@ -1,0 +1,33 @@
+# The style of volta-engine / engine: tabs, spaces inside parentheses, K&R braces, short blocks on one line.
+BasedOnStyle: LLVM
+Language: Cpp
+Standard: c++17
+UseTab: Always
+IndentWidth: 4
+TabWidth: 4
+ContinuationIndentWidth: 4
+ColumnLimit: 150
+BreakBeforeBraces: Attach
+SpacesInParens: Custom
+SpacesInParensOptions:
+  InConditionalStatements: true
+  InCStyleCasts: false
+  InEmptyParentheses: false
+  Other: true
+InsertBraces: true
+SpacesInSquareBrackets: false
+SpaceBeforeParens: ControlStatements
+AllowShortBlocksOnASingleLine: Always
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: All
+AllowShortCaseLabelsOnASingleLine: true
+IndentCaseLabels: false
+NamespaceIndentation: None
+PointerAlignment: Left
+DerivePointerAlignment: false
+AlignAfterOpenBracket: Align
+AlignTrailingComments: true
+SortIncludes: false
+ReflowComments: false
+MaxEmptyLinesToKeep: 2

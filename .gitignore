@@ -1,0 +1,33 @@
+# "hidden"/dot files
+.*/
+!.gitignore
+
+# artifacts
+build/
+build_*/
+bin/
+makefiles/defaults/*
+*.d
+*.o
+*.obj
+*.so
+*.a
+*.tmp
+
+# logs
+*.log
+results/
+
+# per-system shit
+/models/
+.venv*/
+venv/
+tests/local.env
+__pycache__/
+
+# clangd: the root link to build/compile_commands.json
+/compile_commands.json
+
+# python packaging
+*.egg-info/
+dist/

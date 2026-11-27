@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "propan2ol"
+version = "0.1.0"
+description = "Text to IPA: a standalone port of espeak-ng's phonemizing, with phonemizer's espeak backend semantics"
+readme = "README.md"
+license = "GPL-3.0-or-later"
+requires-python = ">=3.8"
+classifiers = ["Topic :: Text Processing :: Linguistic"]
+
+[tool.setuptools]
+packages = ["propan2ol"]
+
+[tool.setuptools.package-data]
+propan2ol = ["*.so", "*.dll", "*.dylib"]
